@@ -54,8 +54,8 @@ int size(Node* root){
   if(root == NULL) return 0;
 
   int num = 1;
-  num = num + size(root->left);
-  num = num + size(root->right);
+  num += size(root->left);
+  num += size(root->right);
 
   return num;
 }
