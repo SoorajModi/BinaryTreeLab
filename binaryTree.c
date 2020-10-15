@@ -8,18 +8,18 @@ Node* createNode(int data) {
   return node;
 }
 
-void insert(Node* root, Node* toInsert) {
+void insertNode(Node* root, Node* toInsert) {
   if (root == NULL || toInsert == NULL) return;
 
   if (toInsert->data >= root->data) {
     if (root->right != NULL) {
-      insert(root->right, toInsert);
+      insertNode(root->right, toInsert);
     } else {
       root->right = toInsert;
     }
   } else if (toInsert->data < root->data) {
     if (root->left != NULL) {
-      insert(root->left, toInsert);
+      insertNode(root->left, toInsert);
     } else {
       root->left = toInsert;
     }

@@ -12,7 +12,7 @@ typedef struct node {
 } Node;
 
 Node* createNode(int value);
-void insert(Node* root, Node* toInsert);
+void insertNode(Node* root, Node* toInsert);
 void printPostorder(Node* root);
 void printPreorder(Node* root);
 void printInorder(Node* root);

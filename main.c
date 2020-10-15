@@ -16,7 +16,6 @@ int main(int argc, char* argv[]) {
   int num;
   fgets(rootStr, 10, fp);
   num = atoi(rootStr);
-
   Node* root = createNode(num);
 
   while(ftell(fp) != fileEnd){
@@ -24,7 +23,7 @@ int main(int argc, char* argv[]) {
     fgets(tempStr, 10, fp);
     num = atoi(tempStr);
     Node* n = createNode(num);
-    insert(root, n);
+    insertNode(root, n);
   }
 
   printPostorder(root);
