@@ -16,7 +16,8 @@ int main(int argc, char* argv[]) {
   int num;
   fgets(rootStr, 10, fp);
   num = atoi(rootStr);
-  Node* root = createNode(num);
+  Node* root = NULL;
+  root = createNode(num);
 
   while(ftell(fp) != fileEnd){
     char tempStr[10];

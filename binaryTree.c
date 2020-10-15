@@ -51,7 +51,7 @@ void printInorder(Node* root) {
 }
 
 int size(Node* root){
-  if(root == NULL) return 0;
+  if(root == NULL) return -1;
 
   int num = 1;
   num += size(root->left);
